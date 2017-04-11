@@ -1,4 +1,4 @@
-# xenpromo Lead Generation App
+# BigLeads - Lead Generation App [ admin dashboard ]
 
 ### Current Stack
 
