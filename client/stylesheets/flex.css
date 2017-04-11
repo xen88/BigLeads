@@ -1,0 +1,40 @@
+.EntriesList.list-group .entry-item .flex.entry-sub-item {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    padding: 2rem 2rem;
+    flex-wrap: wrap;
+    flex: 1;
+    white-space: pre-wrap !important;
+}
+.EntriesList.list-group .entry-item .flex.entry-sub-item p {
+    white-space: pre-wrap !important;
+}
+.EntriesList.list-group .entry-item {
+    padding: 0 !important;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+.EntriesList.list-group .entry-item .flex.entry-sub-item.checkbox {
+    max-width: 55px;
+    color: #e0e0e0;
+}
+.EntriesList.list-group .entry-item .flex.entry-sub-item.textarea {
+    flex-grow: 2 !important;
+    background: #f1f0f0;
+}
+.EntriesList.list-group .entry-item .flex.entry-sub-item.text {
+    /*max-width: 70px;*/
+    /*color: #3076e8;*/
+}
+
+.EntriesList.list-group .entry-item .flex.entry-sub-item.bg-highlight {
+  color: #fff;
+    background: #3076e8;
+}
+.EntriesList.list-group .entry-item .flex.entry-sub-item span.icon.true {
+    color: #3076e8;
+}

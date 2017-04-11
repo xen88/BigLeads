@@ -1,0 +1,44 @@
+.originModal button.close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    padding: 2px 10px;
+    border-radius: 0;
+    line-height: 2rem;
+    box-shadow: none;
+    border: none;
+}
+/*.originModal input[type="submit"] {}*/
+  .originModal form input {
+    height: 40px
+  }
+.originModal {
+    /* display: table-cell; */
+    vertical-align: middle;
+    margin: 0 auto;
+    width: 400px;
+    position: relative;
+    background: #F4F4F4;
+    z-index: 9999;
+    height: 125px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.19);
+    text-align: left;
+    padding: 2.6rem 2.5rem 2.5rem 2.5rem;
+}
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    display: table-row;
+    width: 100%;
+    text-align: center;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.42);
+    padding: 10rem;
+}
+.ReactModalPortal {
+    display: table;
+}

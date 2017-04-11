@@ -1,0 +1,66 @@
+
+  .demo8-outer {
+    background-color: #EEE;
+    color: #FFF;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font: 28px/1em "Helvetica";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+  }
+  .demo8 {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    margin-top: 3rem;
+  }
+  .demo8-item {
+  position: absolute;
+      width: 100%;
+      height: 60px;
+      overflow: visible;
+      pointer-events: auto;
+      transform-origin: 50% 50% 0px;
+      border-radius: 3px;
+      /*color: #999;*/
+      color: #4E4E4E;
+      line-height: 60px;
+      padding-left: 25px;
+      font-size: 14px;
+      font-weight: 700;
+      background-color: #FFF;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      cursor: pointer;
+    }
+  /*.demo8-item {
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    overflow: visible;
+    pointer-events: auto;
+    transform-origin: 50% 50% 0px;
+    border-radius: 4px;
+    color: rgb(153, 153, 153);
+    line-height: 96px;
+    padding-left: 32px;
+    font-size: 24px;
+    font-weight: 400;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }*/
+  .link {
+    position: absolute;
+    color: rgb(76, 76, 76);
+    text-decoration: none;
+    font: 14px/1em "Helvetica";
+    padding: 10px;
+    top: 0;
+    left: 0;
+  }
