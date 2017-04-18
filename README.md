@@ -9,8 +9,9 @@
 
 
 
-*Not Production Ready*
-*This is a work in progress.*
+*Not Production Ready - *
+*This is a work in progress [ 75% ]*
+Client app is in a separate repo (to be uploaded).
 
 
 
