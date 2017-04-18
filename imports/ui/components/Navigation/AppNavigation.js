@@ -13,7 +13,7 @@ const AppNavigation = ({ hasUser }) => (
   <Navbar className=" noMargin altStyle br0 bg-blue none">
     <Navbar.Header>
       <Navbar.Brand>
-        <Link to="/"><span className="white montserrat bold uppercase_ opacity50 lsn">xen</span><span className="white light opacity50">promo</span></Link>
+        <Link to="/"><span className="white montserrat bold uppercase_ opacity50 lsn">big</span><span className="white light opacity50">leads</span></Link>
       </Navbar.Brand>
       <Navbar.Toggle />
     </Navbar.Header>

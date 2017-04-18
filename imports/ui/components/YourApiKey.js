@@ -13,7 +13,7 @@ const YourApiKey = (props) => (
 
 
     <h4 className="f4 fw6 ttu tracked dark-red_">Your API Key <span className="icon icon-key dark-red"></span></h4>
-    <p><span className="black-50">Keep it safe</span></p>
+    <p><span className="black-50"></span></p>
     <hr></hr>
     </div>
     <p><code className="apikey">{ props.APIkey }</code></p>

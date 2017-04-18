@@ -34,4 +34,5 @@ For best results, cache the REST endpoint behind NGINX or similar. To improve pe
 
 ##### Screenshots
 
- ![BigLeads](https://s23.postimg.org/u8z9soswb/xenpro.png)
+ ![Promo](https://s14.postimg.org/yw33brb7x/promo.jpg)
+ ![Fields](https://s14.postimg.org/atm9gvukt/fields.jpg)
