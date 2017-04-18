@@ -1,6 +1,10 @@
-# BigLeads - Lead Generation App [ admin dashboard ]
+## BigLeads - Lead Generation App [ admin dashboard ]
+This app allows you to easily create promotional mini-sites / lead generation pages. A REST Api is exposed which is consumed by a separate client app (coming soon) written in the more lightweight **Preact** to improve mobile performance.
 
-### Current Stack
+For best results, cache the REST endpoint behind NGINX or similar. To improve performance and scalability you can **disable DDP / Websockets**.
+
+
+##### Current Stack
 
 - Meteor
 - MongoDB
@@ -8,14 +12,15 @@
 
 
 
+##### Status
+- in development
+- 75% complete
+- Client app is in a separate repo (to be uploaded)
 
-*Not Production Ready - *
-*This is a work in progress [ 75% ]*
-Client app is in a separate repo (to be uploaded).
 
 
 
-### Todo
+##### Todo
 
 - Sort entries list by promo or convert to datatable
 - Make stats graph live
@@ -27,6 +32,6 @@ Client app is in a separate repo (to be uploaded).
 
 
 
-### Screenshots
+##### Screenshots
 
  ![BigLeads](https://s23.postimg.org/u8z9soswb/xenpro.png)
