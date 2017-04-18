@@ -2,8 +2,6 @@ import React from 'react';
 import { Motion, spring } from 'react-motion';
 import { Badge } from 'react-bootstrap';
 
-// import range from 'lodash.range';
-
 function reinsert(arr, from, to) {
   const _arr = arr.slice(0);
   const val = _arr[from];
@@ -11,33 +9,19 @@ function reinsert(arr, from, to) {
   _arr.splice(to, 0, val);
   return _arr;
 }
-
 function clamp(n, min, max) {
   return Math.max(Math.min(n, max), min);
 }
-
 const springConfig = {stiffness: 300, damping: 50};
 
-// const
-// const { items } = this.props.promofields;
-// console.log(this.props);
-
 const Sortable = React.createClass({
-
-  // console.log(this.props);
   getInitialState( props ) {
-    // console.log(this.props.promofields)
-    let fields = this.props.promofields;
-    // const itemsCount = 4;
 
-    // console.log(fields);
+    let fields = this.props.promofields;
     let _fields = [];
     for(let item of fields) {
       _fields.push(item._id)
     }
-
-
-
     return {
       topDeltaY: 0,
       mouseY: 0,
@@ -47,32 +31,21 @@ const Sortable = React.createClass({
       fields: fields
     };
   },
-
   componentDidMount() {
-    // console.log(this.refs);
-    // if (this.refs.sortable) {
       window.addEventListener('touchmove', this.handleTouchMove);
       window.addEventListener('touchend', this.handleMouseUp);
       window.addEventListener('mousemove', this.handleMouseMove);
       window.addEventListener('mouseup', this.handleMouseUp);
-    // }
-
   },
   componentWillUnount() {
-    // if (this.refs.sortable) {
       window.removeEventListener('touchmove', this.handleTouchMove.unbind(this));
       window.removeEventListener('touchend', this.handleMouseUp.unbind(this));
       window.removeEventListener('mousemove', this.handleMouseMove.unbind(this));
       window.removeEventListener('mouseup', this.handleMouseUp.unbind(this));
-    // }
-
   },
-
-
   handleTouchStart(key, pressLocation, e) {
     this.handleMouseDown(key, pressLocation, e.touches[0]);
   },
-
   handleTouchMove(e) {
     e.preventDefault();
     this.handleMouseMove.bind(this,e.touches[0]);
@@ -88,10 +61,6 @@ const Sortable = React.createClass({
       originalPosOfLastPressed: pos,
     });
   // }
-
-
-
-    // console.log(this.state);
   },
 
   handleMouseMove({pageY}) {
@@ -112,32 +81,18 @@ const Sortable = React.createClass({
     }
   },
 
-  handleMouseUp() {
-    // console.log(this.refs);
+  handleMouseUp() {    
     if (this.refs.sortable) {
-    this.setState({isPressed: false, topDeltaY: 0});
-    // console.log(this.state.order);
-    // console.log(this.props.params._id)
-    let pageid = this.props.params._id;
-    let order = this.state.order;
-    const updateOrder = { pageid, order };
-    Meteor.call('orderFields', updateOrder);
+      this.setState({isPressed: false, topDeltaY: 0});
+      let pageid = this.props.params._id;
+      let order = this.state.order;
+      const updateOrder = { pageid, order };
+      Meteor.call('orderFields', updateOrder);
     }
-
-
   },
 
   render( fields ) {
     const {mouseY, isPressed, originalPosOfLastPressed, order} = this.state;
-    // const itemsCount = this.props.promofields.length;
-    // const itemsCount = this.state.fields.length;
-    // console.log(itemsCount);
-    // console.log(this.state.originalPosOfLastPressed)
-
-    // const items = this.props.promofields;
-    // console.log(this.props)
-
-    // console.log(items)
 
     return (
       <div className="demo8" ref="sortable_wrap">

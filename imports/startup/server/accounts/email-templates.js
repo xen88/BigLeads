@@ -1,7 +1,7 @@
 import { Accounts } from 'meteor/accounts-base';
 
-const name = 'CityApp';
-const email = '<cghurrell@gmail.com>';
+const name = 'BigLeads';
+const email = '<admin@example.com>';
 const from = `${name} ${email}`;
 const emailTemplates = Accounts.emailTemplates;
 

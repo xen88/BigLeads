@@ -9,7 +9,7 @@
 
 
 
-*Not Production Ready !!*
+*Not Production Ready*
 *This is a work in progress.*
 
 
@@ -28,4 +28,4 @@
 
 ### Screenshots
 
- ![xenpromo Lead Generation app](https://s23.postimg.org/u8z9soswb/xenpro.png)
+ ![BigLeads](https://s23.postimg.org/u8z9soswb/xenpro.png)

@@ -7,9 +7,7 @@ import EditDocument from '../pages/EditDocument.js';
 import Loading from '../components/Loading.js';
 
 const composer = ({ params }, onData) => {
-  // Edit existing document (params)
   if(params !== undefined) {
-    console.log(params);
       const sub_docs = Meteor.subscribe('documents.view', params._id);
       const sub_fields = Meteor.subscribe('fields.list');
       const sub_features = Meteor.subscribe('features.list');
@@ -28,7 +26,6 @@ const composer = ({ params }, onData) => {
         onData(null, { data });
       }
   }
-  // Add new document (no params)
   else {
     const sub_fields = Meteor.subscribe('fields.list');
     const sub_features = Meteor.subscribe('features.list');

@@ -1,7 +1,7 @@
 {
-  "name": "infinity-lead-generation",
+  "name": "xone-bigleads",
   "version": "1.0.0",
-  "description": "Lead Generation App.",
+  "description": "BigLeads : Lead Generation App.",
   "scripts": {
     "start": "meteor --settings settings-development.json",
     "test": "meteor test --driver-package practicalmeteor:mocha --port 5000",

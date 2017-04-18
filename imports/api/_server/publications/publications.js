@@ -52,11 +52,3 @@ Meteor.publish('settings.view', (_id) => {
   check(_id, String);
   return Settings.find(_id);
 });
-// Meteor.publish('petitions.view', (_id) => {
-//   check(_id, String);
-//   return Settings.find(_id);
-// });
-// Meteor.publish('origins.view', (_id) => {
-//   check(_id, String);
-//   return Settings.find(_id);
-// });

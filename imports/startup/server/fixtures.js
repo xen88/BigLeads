@@ -4,10 +4,10 @@ import { Accounts } from 'meteor/accounts-base';
 
 if (!Meteor.isProduction) {
   const users = [{
-    email: 'cghurrell@gmail.com',
+    email: 'admin@example.com',
     password: 'password',
     profile: {
-      name: { first: 'Chris', last: 'Hurrell' },
+      name: { first: '', last: '' },
     },
     roles: ['admin'],
   }];
